@@ -59,6 +59,6 @@ SELECT * FROM Avion WHERE Avion_Capacite > (SELECT AVG(Avion_Capacite) FROM Avio
 select * from Avion;
 select * from Vol;
 select * from Pilote;
-insert into Pilote value(100,'khalid','fes');
+
 insert into Vol value(103,100,100,'RABAT','Paris','03:04:06','03:04:06');
 select Pilote.Pilote_Nom,Pilote.Pilote_Adresse  from Pilote INNER JOIN Vol ON Vol.Pilote_ID = Pilote.Pilote_ID;
